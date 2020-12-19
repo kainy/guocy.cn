@@ -18,6 +18,18 @@
 	<meta name=version content=2020-12-19>
   <meta name=referrer content=never>
   <style>
+	body {
+	    color: #555;
+    	    background: #fafafa;
+	}
+
+	@media (prefers-color-scheme: dark) {
+	    /* 操作系统及浏览器支持且用户开启了 Dark Mode */
+	    body {
+		color: #bcbcbc;
+		background: #2c2a2a;
+	    }
+	}
   .my-face {
       animation: my-face 5s infinite ease-in-out;
       display: inline-block;
