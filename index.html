@@ -7,7 +7,6 @@
 	<meta http-equiv=X-UA-Compatible content="IE=edge">
 	<meta name=renderer content=webkit>
 	<meta name=viewport content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no,minimal-ui">
-
 	<title>Hello World</title>
 	<meta name=keywords content="个人主页, guocy.cn" property=og:keywords>
 	<meta name=description content="guocy 的个人主页" itemprop=description property=og:description>
@@ -17,6 +16,7 @@
 	<meta name=author content=郭涛 itemprop=name>
 	<meta name=version content=2020-12-19>
   <meta name=referrer content=never>
+  <link rel="shortcut icon" href="https://kainy.cn/favicon.ico" />
   <style>
 	body {
 	    color: #555;
@@ -216,7 +216,22 @@
       document.getElementById('since').innerHTML = daysold + "天" + hrsold + "小时" + minsold + "分" + seconds + "秒"
     }
     show_date_time();
+
+    window.onload = function (){
+      setTimeout(function () {
+        var src= [
+          'https://kainy.cn/js/common.js'
+        ];
+        for(var i= src.length; i> 0; i--){
+          var c = document.createElement('script'); 
+          c.type = 'text/javascript';
+          c.defer = true;
+          c.src = src[i-1];
+          var h = document.getElementsByTagName('script')[0];
+          h.parentNode.insertBefore(c, h);
+        }
+      }, 2)
+    }
   </script>
-  <script src="https://kainy.cn/js/common.js"></script>
 </body>
 </html>
