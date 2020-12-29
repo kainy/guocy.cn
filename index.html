@@ -7,9 +7,9 @@
 	<meta http-equiv=X-UA-Compatible content="IE=edge">
 	<meta name=renderer content=webkit>
 	<meta name=viewport content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no,minimal-ui">
-	<title>Hello World</title>
+	<title>你好，世界 ｜ Hello World</title>
 	<meta name=keywords content="个人主页, guocy.cn" property=og:keywords>
-	<meta name=description content="guocy 的个人主页" itemprop=description property=og:description>
+	<meta name=description content="郭柠（guocy）的个人主页" itemprop=description property=og:description>
 	<meta name=msapplication-TileColor content=gray>
 	<meta name=theme-color content=gray>
 	<meta name=apple-mobile-web-app-capable content=yes>
@@ -19,18 +19,30 @@
   <meta name="baidu-site-verification" content="code-j4R2q3Mplo" />
   <link rel="shortcut icon" href="https://kainy.cn/favicon.ico" />
   <style>
-	body {
+	html {
 	    color: #555;
     	    background: #fafafa;
 	}
 
 	@media (prefers-color-scheme: dark) {
 	    /* 操作系统及浏览器支持且用户开启了 Dark Mode */
-	    body {
+	    html {
 		color: #bcbcbc;
 		background: #2c2a2a;
 	    }
 	}
+	  html:after {
+    content: '';
+    background: url(https://wx1.sinaimg.cn/large/bed3a0a4ly1gabdqjawd3j20u01hcdur.jpg) repeat;
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    opacity: .3;
+    background-size: cover;
+}
   .my-face {
       animation: my-face 5s infinite ease-in-out;
       display: inline-block;
@@ -195,7 +207,7 @@
   </style>
 </head>
 <body>
-  萌萌哒 Guocy <p class="my-face">(●'◡'●)ﾉ♥</p>
+  萌萌哒郭柠 <p class="my-face">(●'◡'●)ﾉ♥</p>
   <p>来到这个世界已经 <span id="since"></span>
   </p>
   <script>
